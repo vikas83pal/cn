@@ -1,0 +1,13 @@
+sudo apt update
+sudo apt upgrade -y
+sudo apt install wireshark -y
+
+- If you selected **No** or skipped this step, reconfigure it later using:
+sudo dpkg-reconfigure wireshark-common
+  
+sudo usermod -aG wireshark $USER
+wireshark --version
+wireshark
+sudo apt remove wireshark wireshark-common -y
+
+
